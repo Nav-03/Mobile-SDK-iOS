@@ -1627,7 +1627,7 @@
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-DJISdkDemo/Pods-DJISdkDemo-frameworks.sh",
 				"${PODS_ROOT}/DJI-SDK-iOS/iOS_Mobile_SDK/DJISDK.framework",
-				"${PODS_ROOT}/DJINetworkRTKHelper/DJINetworkRTKHelper/DJINetworkRTKHelper.framework",
+				"${PODS_ROOT}/DJINetworkRTKHelper/DJINetworkHelper/DJINetworkRTKHelper.framework",
 				"${PODS_ROOT}/DJIWidget/FFmpeg/FFmpeg.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
@@ -1943,7 +1943,7 @@
 					"-ObjC",
 					"$(inherited)",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.dji.sdksamplecode;
+				PRODUCT_BUNDLE_IDENTIFIER = "boop.DJITestApp-";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -1984,7 +1984,7 @@
 					"-ObjC",
 					"$(inherited)",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.dji.sdksamplecode;
+				PRODUCT_BUNDLE_IDENTIFIER = "boop.DJITestApp-";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
