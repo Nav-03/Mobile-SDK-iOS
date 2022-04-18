@@ -13,13 +13,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UISplitViewControllerDele
 
     var window: UIWindow?
 
-    var productCommunicationManager = ProductCommunicationManager()
+    var productCommManager = ProductCommunicationManager()
     
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
 
-        self.productCommunicationManager.registerWithSDK()
+        self.productCommManager.registerProduct()
         return true
     }
 

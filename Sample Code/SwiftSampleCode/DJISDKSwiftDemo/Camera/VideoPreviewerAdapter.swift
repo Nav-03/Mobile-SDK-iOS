@@ -360,7 +360,7 @@ extension VideoPreviewerAdapter: DJIVideoPreviewerFrameControlDelegate {
     func isNeedFitFrameWidth() -> Bool {
         let displayName = VideoPreviewerAdapter.camera()?.displayName
         if displayName == DJICameraDisplayNameMavic2ZoomCamera ||
-            displayName == DJICameraDisplayNameMavic2ProCamera {
+            displayName == DJIAircraftModelNameDJIAir2S {
             return true
         }
         return false

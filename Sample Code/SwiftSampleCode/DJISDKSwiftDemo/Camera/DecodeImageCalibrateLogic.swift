@@ -19,7 +19,7 @@ class DecodeImageCalibrateLogic: NSObject {
                 return
             }
             _cameraName = newValue
-            let supported = _cameraName == DJICameraDisplayNameMavic2ZoomCamera || _cameraName == DJICameraDisplayNameMavic2ProCamera
+            let supported = _cameraName == DJICameraDisplayNameMavic2ZoomCamera || _cameraName == DJICameraDisplayNameDJIAir2SCamera
             calibrateNeeded = supported
             calibrateStandAlone = false
         }
@@ -32,7 +32,7 @@ class DecodeImageCalibrateLogic: NSObject {
     //data source info
     fileprivate let dataSourceInfo: [String: DJIImageCalibrateFilterDataSource.Type] = [
         DJICameraDisplayNameMavic2ZoomCamera: DJIMavic2ZoomCameraImageCalibrateFilterDataSource.self,
-        DJICameraDisplayNameMavic2ProCamera: DJIMavic2ProCameraImageCalibrateFilterDataSource.self,
+        DJICameraDisplayNameDJIAir2SCamera: DJIAir2SCameraImageCalibrateFilterDataSource.self,
     ]
     //helper for calibration
     fileprivate var helper: DJIImageCalibrateHelper?
